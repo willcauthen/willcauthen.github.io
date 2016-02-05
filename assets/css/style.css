@@ -13,8 +13,23 @@ p {
 }
 
 .myPic {
-	width: 150px;
-	height: 150px;
-	border-radius: 75px;
+	width: 75px;
+	height: 75px;
+	border-radius: 37px;
 
+}
+
+div {
+    width: 450px;
+    margin: auto;
+}
+
+div div {
+    width: 150px;
+    height: 150px;
+    outline: 1px solid;
+    float: left;
+}
+div div:hover {
+	background: rgba(200, 0, 0, .3);
 }
