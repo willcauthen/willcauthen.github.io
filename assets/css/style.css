@@ -11,3 +11,10 @@ body {
 p {
 	color: limegreen;
 }
+
+.myPic {
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+
+}
