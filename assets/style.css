@@ -2,3 +2,12 @@ body {
 	background: black;
 	color: white;
 }
+
+.heading {
+	text-align: center;
+	margin: 0 auto;
+}
+
+p {
+	color: limegreen;
+}
