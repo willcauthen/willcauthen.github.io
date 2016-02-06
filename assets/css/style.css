@@ -21,26 +21,21 @@ p {
 
 #board {
 	position: fixed;
-    width: 450px;
     margin: auto;
+    width: 450px;
 }
 
 div .square {
     width: 150px;
     height: 150px;
+    background: rgba(0, 0, 0, 1);
     outline: 1px solid;
     float: left;
 }
 div .square:hover {
-	background: rgba(200, 0, 0, .3);
+	background: rgba(200, 0, 0, 1);
 }
 
-span .tile {
-	width: 150px;
-	height: 150px;
-	background: rgba(0, 0, 0, 1);
-	z-index: 0;
-}
 
 .X {
 	width: 150px;
