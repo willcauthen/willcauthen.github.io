@@ -19,17 +19,38 @@ p {
 
 }
 
-div {
+#board {
+	position: fixed;
     width: 450px;
     margin: auto;
 }
 
-div div {
+div .square {
     width: 150px;
     height: 150px;
     outline: 1px solid;
     float: left;
 }
-div div:hover {
+div .square:hover {
 	background: rgba(200, 0, 0, .3);
+}
+
+span .tile {
+	width: 150px;
+	height: 150px;
+	background: rgba(0, 0, 0, 1);
+	z-index: 0;
+}
+
+.X {
+	width: 150px;
+	height: 150px;
+	position: fixed;
+	z-index: -1;
+}
+.O {
+	width: 150px;
+	height: 150px;
+	position: fixed;
+	z-index: -2;
 }
