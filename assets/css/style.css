@@ -9,6 +9,7 @@ body {
 }
 
 p {
+	background-color: rgba(50, 0, 0, .3);
 	color: limegreen;
 }
 
