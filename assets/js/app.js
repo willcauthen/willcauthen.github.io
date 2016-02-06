@@ -6,12 +6,15 @@ var hash = [[null, null, null],
 
 $(document).ready(function() {
 	$("div div").click(function () {
-		console.log(this);
+		var id = this.id;
 		if (whoseTurn == "X") {
-			var id = this.id;
-			elem = document.getElementById(id);
-			$("img.X").css("z-index", 0);
-			// console.log(elem);
+			var tile = "X" + id;
+			tile = document.getElementById(tile);
+			$(tile).css("z-index", 0);
+		} else if (whoseTurn == "O") {
+			var tile = "O" + id;
+			tile = document.getElementById(tile);
+			$(tile).css("z-index", 0);
 		}
 		turn();
 	});
