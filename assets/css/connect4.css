@@ -1,0 +1,16 @@
+div .container {
+	position: fixed;
+	margin: auto;
+	width: 525px;
+	height: 450px;
+}
+div.col {
+	height: 75px;
+	width: 75px;
+	border: 1px solid red;
+	float: left;
+}
+div.row  {
+	width: 525px;
+	height: 75px;
+}
