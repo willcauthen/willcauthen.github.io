@@ -33,7 +33,7 @@ div .square {
     float: left;
 }
 div .square:hover {
-	background: rgba(200, 0, 0, 1);
+	background: rgba(50, 0, 0, 1);
 }
 
 

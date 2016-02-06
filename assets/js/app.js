@@ -7,14 +7,15 @@ var hash = [[null, null, null],
 $(document).ready(function() {
 	$("div div").click(function () {
 		console.log(this);
+		if (whoseTurn == "X") {
+			var id = this.id;
+			elem = document.getElementById(id);
+			$("img.X").css("z-index", 0);
+			// console.log(elem);
+		}
 		turn();
 	});
 });
-
-
-function game() {
-
-}
 
 function turn() {
 	if (whoseTurn == "O") {
