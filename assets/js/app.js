@@ -6,17 +6,22 @@ var hash = [[null, null, null],
 
 $(document).ready(function() {
 	$("div div").click(function () {
-		var id = this.id;
-		if (whoseTurn == "X") {
-			var tile = "X" + id;
-			tile = document.getElementById(tile);
-			$(tile).css("z-index", 0);
-		} else if (whoseTurn == "O") {
-			var tile = "O" + id;
-			tile = document.getElementById(tile);
-			$(tile).css("z-index", 0);
+		if (this.id){
+			var id = this.id;
+			if (whoseTurn == "X") {
+				var tile = "X" + id;
+				tile = document.getElementById(tile);
+				$(tile).css("z-index", 0);
+				$(this).attr("id", null);
+				console.log(this);
+			} else if (whoseTurn == "O") {
+				var tile = "O" + id;
+				tile = document.getElementById(tile);
+				$(tile).css("z-index", 0);
+				$(this).attr("id", null);
+			}
+			turn();
 		}
-		turn();
 	});
 });
 
