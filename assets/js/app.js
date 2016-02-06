@@ -53,7 +53,7 @@ $(document).ready(function() {
 					turn();
 					checkWinner();
 				}
-			} else{
+			} else {
 				alert("WE ALREADY HAVE A WINNER, FOOL");
 			}
 	});
