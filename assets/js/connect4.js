@@ -33,11 +33,8 @@ $(document).ready(function () {
 		var point = this.id - 7;
 		console.log(point);
 		if (hash[point] !==null || hash[point] === undefined){
-			console.log("it's real");
-			console.log(this.id + " WAS CLICKIFIED");
 			$(elem).css("background", whoseTurn);
 			hash[this.id] = whoseTurn;
-			console.log(hash);
 			$(this).val("true");
 			turn();
 		} else if (point > 50){
