@@ -31,13 +31,14 @@ $(document).ready(function () {
 
 	} else if (!this.value) {
 		var point = this.id - 7;
-		console.log(point);
+		console.log(this.id);
 		if (hash[point] !==null || hash[point] === undefined){
 			$(elem).css("background", whoseTurn);
 			hash[this.id] = whoseTurn;
 			$(this).val("true");
+			checkWinner();
 			turn();
-		} else if (point > 50){
+		} else {
 			console.log("that ain't a valid move, slick");			
 		}
 	}
@@ -52,4 +53,21 @@ function turn() {
 		whoseTurn = "blue";
 	}
 	console.log(whoseTurn + " turn");
+}
+
+function checkWinner() {
+	for (var i = 0; i < hash.length; i++) {
+		if (hash[i] !== null){
+			if ( hash[i] == hash[i + 1] && hash[i] == hash[i + 2] && hash[i] == hash[i +3]) {
+				console.log( hash[i] + " IS A WINNER WINNER CHICKEN DINNER");
+			} else if (hash[i] == hash[i + 7] && hash[i] == hash[i + 14] && hash[i] == hash[i + 21]) {
+				console.log( hash[i] + " IS A WINNER WINNER CHICKEN DINNER");
+			} else if (hash[i] == hash[i + 6] && hash[i] == hash[i + 12] && hash[i] == hash[i + 18]) {
+				console.log( hash[i] + " IS A WINNER WINNER CHICKEN DINNER");
+			} else if (hash[i] == hash[i + 8] && hash[i] == hash[i + 16] && hash[i] == hash[i + 24]) {
+				console.log( hash[i] + " IS A WINNER WINNER CHICKEN DINNER");
+			}
+			
+		}
+	}
 }

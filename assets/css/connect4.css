@@ -20,3 +20,7 @@ div.row  {
 	background: yellow;
 	/*z-index: -1;*/
 }
+
+body {
+	background: blue;
+}
