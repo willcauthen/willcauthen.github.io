@@ -1,5 +1,13 @@
 console.log("we're in good shape");
 whoseTurn = "blue";
+hash = [
+	null, null, null, null, null, null, null,
+	null, null, null, null, null, null, null,
+	null, null, null, null, null, null, null,
+	null, null, null, null, null, null, null,
+	null, null, null, null, null, null, null,
+	null, null, null, null, null, null, null
+	];
 $(document).ready(function () {
 
 	// selector, for UI
@@ -22,11 +30,19 @@ $(document).ready(function () {
 		console.log("that ain't a valid move, slick");
 
 	} else if (!this.value) {
-		console.log(elem);
-		console.log(this.id + " WAS CLICKIFIED");
-		$(elem).css("background", whoseTurn);
-		$(this).val("true");
-		turn();
+		var point = this.id - 7;
+		console.log(point);
+		if (hash[point] !==null || hash[point] === undefined){
+			console.log("it's real");
+			console.log(this.id + " WAS CLICKIFIED");
+			$(elem).css("background", whoseTurn);
+			hash[this.id] = whoseTurn;
+			console.log(hash);
+			$(this).val("true");
+			turn();
+		} else if (point > 50){
+			console.log("that ain't a valid move, slick");			
+		}
 	}
 	});
 });
