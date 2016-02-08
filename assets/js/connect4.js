@@ -30,7 +30,7 @@ $(document).ready(function () {
 		console.log("that ain't a valid move, slick");
 
 	} else if (!this.value) {
-		var point = this.id - 7;
+		var point = this.id - 10;
 		console.log(this.id);
 		if (hash[point] !==null || hash[point] === undefined){
 			$(elem).css("background", whoseTurn);
@@ -60,13 +60,13 @@ function checkWinner() {
 		if (hash[i] !== null){
 			if ( hash[i] == hash[i + 1] && hash[i] == hash[i + 2] && hash[i] == hash[i +3]) {
 				celebrate(i);
-			} else if (hash[i] == hash[i + 7] && hash[i] == hash[i + 14] && hash[i] == hash[i + 21]) {
+			} else if (hash[i] == hash[i + 10] && hash[i] == hash[i + 20] && hash[i] == hash[i + 30]) {
 				celebrate(i);
-			} else if (hash[i] == hash[i + 6] && hash[i] == hash[i + 12] && hash[i] == hash[i + 18]) {
+			} else if (hash[i] == hash[i + 11] && hash[i] == hash[i + 22] && hash[i] == hash[i + 33]) {
 				celebrate(i);
-			} else if (hash[i] == hash[i + 8] && hash[i] == hash[i + 16] && hash[i] == hash[i + 24]) {
+			} else if (hash[i] == hash[i + 9] && hash[i] == hash[i + 18] && hash[i] == hash[i + 27]) {
 				celebrate(i);
-			} //there is an edge case here that needs to be addressed in the boundaries. i.e. between 6 and 7. numerically they congruous, but for the point of the game they need to be anticipated for
+			} //there is an edge case here that needs to be addressed in the boundaries. i.e. between 6 and 7. numerically they are congruous, but for the point of the game they need to be anticipated for
 			
 		}
 	}
