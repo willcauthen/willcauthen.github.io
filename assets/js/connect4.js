@@ -59,15 +59,19 @@ function checkWinner() {
 	for (var i = 0; i < hash.length; i++) {
 		if (hash[i] !== null){
 			if ( hash[i] == hash[i + 1] && hash[i] == hash[i + 2] && hash[i] == hash[i +3]) {
-				console.log( hash[i] + " IS A WINNER WINNER CHICKEN DINNER");
+				celebrate(i);
 			} else if (hash[i] == hash[i + 7] && hash[i] == hash[i + 14] && hash[i] == hash[i + 21]) {
-				console.log( hash[i] + " IS A WINNER WINNER CHICKEN DINNER");
+				celebrate(i);
 			} else if (hash[i] == hash[i + 6] && hash[i] == hash[i + 12] && hash[i] == hash[i + 18]) {
-				console.log( hash[i] + " IS A WINNER WINNER CHICKEN DINNER");
+				celebrate(i);
 			} else if (hash[i] == hash[i + 8] && hash[i] == hash[i + 16] && hash[i] == hash[i + 24]) {
-				console.log( hash[i] + " IS A WINNER WINNER CHICKEN DINNER");
-			}
+				celebrate(i);
+			} //there is an edge case here that needs to be addressed in the boundaries. i.e. between 6 and 7. numerically they congruous, but for the point of the game they need to be anticipated for
 			
 		}
 	}
+}
+function celebrate(x) {
+	alert(hash[x] + " IS A WINNER WINNER CHICKEN DINNER");
+	console.log( hash[x] + " IS A WINNER WINNER CHICKEN DINNER");
 }
