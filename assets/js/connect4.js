@@ -57,14 +57,18 @@ function turn() {
 
 function checkWinner() {
 	for (var i = 0; i < hash.length; i++) {
-		if (hash[i] !== null){
+		if (hash[i] !== null ){
 			if ( hash[i] == hash[i + 1] && hash[i] == hash[i + 2] && hash[i] == hash[i +3]) {
+				console.log(hash[i],  hash[i + 1], hash[i + 2], hash[i +3]);
 				celebrate(i);
 			} else if (hash[i] == hash[i + 10] && hash[i] == hash[i + 20] && hash[i] == hash[i + 30]) {
+				console.log(hash[i],  hash[i + 10], hash[i + 20], hash[i + 30]);
 				celebrate(i);
 			} else if (hash[i] == hash[i + 11] && hash[i] == hash[i + 22] && hash[i] == hash[i + 33]) {
+				console.log(hash[i],  hash[i + 11], hash[i + 22], hash[i + 33]);
 				celebrate(i);
 			} else if (hash[i] == hash[i + 9] && hash[i] == hash[i + 18] && hash[i] == hash[i + 27]) {
+				console.log(hash[i],  hash[i + 9], hash[i + 18], hash[i + 27]);
 				celebrate(i);
 			} //there is an edge case here that needs to be addressed in the boundaries. i.e. between 6 and 7. numerically they are congruous, but for the point of the game they need to be anticipated for
 			
