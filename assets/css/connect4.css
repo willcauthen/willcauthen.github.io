@@ -32,16 +32,26 @@ div#screen {
 	z-index: -4;
 }
 div#victory {
-	width: 90%;
-	height: 90%;
+	width: 120%;
+	height: 120%;
 	position: fixed;
-	background: rgba(255, 255, 255, .1);
+	background: rgba(50, 50, 50, .7);
 	z-index: -5;
 }
 div#victory h1{
 	text-align: left;
-	padding: 150px;
+	padding-left: 150px;
 	width: 50%;
+}
+div#victory button {
+	color: pink;
+	background: black;
+	height: 200px;
+	width: 200px;
+	border-radius: 100px;
+	position: relative;
+	left: 25%;
+	font-size: 25px;
 }
 h1.kudos {
 	font-family: cursive;

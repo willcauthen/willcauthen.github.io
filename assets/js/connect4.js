@@ -1,5 +1,5 @@
 console.log("we're in good shape");
-whoseTurn = "blue";
+whoseTurn = "BLUE";
 
 hash = [
 	null, null, null, null, null, null, null,
@@ -49,12 +49,12 @@ $(document).ready(function () {
 
 
 function turn() {
-	if (whoseTurn == "blue") {
-		whoseTurn = "red";
-	} else if (whoseTurn == "red") {
-		whoseTurn = "blue";
+	if (whoseTurn == "BLUE") {
+		whoseTurn = "RED";
+	} else if (whoseTurn == "RED") {
+		whoseTurn = "BLUE";
 	}
-	console.log(whoseTurn + " turn");
+	console.log(whoseTurn + "'s turn");
 }
 
 function checkWinner() {
@@ -76,5 +76,7 @@ function checkWinner() {
 function celebrate(x) {
 	// alert(hash[x] + " IS A WINNER WINNER CHICKEN DINNER");
 	console.log( hash[x] + " IS A WINNER WINNER CHICKEN DINNER");
+	$(".kudos").prepend(" " + whoseTurn + "'S A ");
 	$("div#victory").css( "zIndex", 5);
+
 }
