@@ -67,12 +67,12 @@ function checkWinner() {
 				celebrate(i);
 			} else if (hash[i] == hash[i + 9] && hash[i] == hash[i + 18] && hash[i] == hash[i + 27]) {
 				celebrate(i);
-			} //there is an edge case here that needs to be addressed in the boundaries. i.e. between 6 and 7. numerically they are congruous, but for the point of the game they need to be anticipated for
+			} 
 			
 		}
 	}
 }
 function celebrate(x) {
-	// alert(hash[x] + " IS A WINNER WINNER CHICKEN DINNER");
+	alert(hash[x] + " IS A WINNER WINNER CHICKEN DINNER");
 	console.log( hash[x] + " IS A WINNER WINNER CHICKEN DINNER");
 }
