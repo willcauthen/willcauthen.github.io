@@ -6,6 +6,7 @@ hash = [
 	null, null, null, null, null, null, null,
 	null, null, null, null, null, null, null,
 	null, null, null, null, null, null, null,
+	null, null, null, null, null, null, null,
 	null, null, null, null, null, null, null
 	];
 $(document).ready(function () {
@@ -57,7 +58,7 @@ function turn() {
 
 function checkWinner() {
 	for (var i = 0; i < hash.length; i++) {
-		if (hash[i] !== null){
+		if (hash[i] !== null ){
 			if ( hash[i] == hash[i + 1] && hash[i] == hash[i + 2] && hash[i] == hash[i +3]) {
 				celebrate(i);
 			} else if (hash[i] == hash[i + 10] && hash[i] == hash[i + 20] && hash[i] == hash[i + 30]) {
@@ -72,6 +73,6 @@ function checkWinner() {
 	}
 }
 function celebrate(x) {
-	alert(hash[x] + " IS A WINNER WINNER CHICKEN DINNER");
+	// alert(hash[x] + " IS A WINNER WINNER CHICKEN DINNER");
 	console.log( hash[x] + " IS A WINNER WINNER CHICKEN DINNER");
 }
