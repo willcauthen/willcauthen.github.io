@@ -1,5 +1,6 @@
 console.log("we're in good shape");
 whoseTurn = "blue";
+
 hash = [
 	null, null, null, null, null, null, null,
 	null, null, null, null, null, null, null,
@@ -73,6 +74,7 @@ function checkWinner() {
 	}
 }
 function celebrate(x) {
-	alert(hash[x] + " IS A WINNER WINNER CHICKEN DINNER");
+	// alert(hash[x] + " IS A WINNER WINNER CHICKEN DINNER");
 	console.log( hash[x] + " IS A WINNER WINNER CHICKEN DINNER");
+	$("div#victory").css( "zIndex", 5);
 }
