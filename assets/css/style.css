@@ -1,7 +1,18 @@
 body {
 	background: black;
 	color: white;
+	margin:40px auto;
+	max-width:650px;
+	line-height:1.6;
+	font-size:18px;
+	color:#444;
+	padding:0 10px;
 }
+
+h1, h2, h3 {
+	line-height:1.2
+}
+    
 
 .heading {
 	text-align: center;
@@ -11,6 +22,7 @@ body {
 p {
 	background-color: rgba(50, 0, 0, .3);
 	color: limegreen;
+	font-size: 16px;
 }
 
 .myPic {
@@ -37,11 +49,6 @@ div .square:hover {
 	background: rgba(50, 0, 0, 1);
 }
 
-div p {
-	margin: 0 auto;
-	padding: 20px;
-	width: 75%;
-}
 .X {
 	width: 150px;
 	height: 150px;
@@ -66,4 +73,14 @@ button {
 .appList p {
 	/*font-size: 14px;*/
 	color: white;
+}
+div p {	
+	margin: 0 auto;
+	padding: 20px;
+	width: 75%;
+	text-align: center;
+}
+button {
+	position: relative;
+	margin: 0 40%;	
 }
