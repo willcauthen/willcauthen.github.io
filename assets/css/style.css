@@ -5,7 +5,7 @@ body {
 	max-width:650px;
 	line-height:1.6;
 	font-size:18px;
-	color:#444;
+	color: white;
 	padding:0 10px;
 }
 
@@ -21,7 +21,7 @@ h1, h2, h3 {
 
 p {
 	background-color: rgba(50, 0, 0, .3);
-	color: limegreen;
+	color: white;
 	font-size: 16px;
 }
 
@@ -64,7 +64,7 @@ div .square:hover {
 button {
 	width: 100px;
 	height: 20%;
-	background: green;
+	background: crimson;
 	color: white;
 	border: 2px solid green;
 	border-radius: 5px;
