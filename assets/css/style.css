@@ -63,16 +63,21 @@ div .square:hover {
 }
 button {
 	width: 100px;
-	height: 20%;
+	height: 50px;
 	background: crimson;
 	color: white;
 	border: 2px solid green;
 	border-radius: 5px;
-	margin: 10px;
 }
 .appList p {
 	/*font-size: 14px;*/
 	color: white;
+}
+
+#reset {
+	position: relative;
+	margin: 75% 0;
+	
 }
 div p {	
 	margin: 0 auto;

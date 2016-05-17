@@ -39,13 +39,14 @@ $(document).ready(function() {
 						break;
 					}
 					var id = this.id;
+					var tile;
 					if (whoseTurn == "X") {
-						var tile = "X" + id;
+						tile = "X" + id;
 						tile = document.getElementById(tile);
 						$(tile).css("z-index", 0);
 						$(this).attr("id", null);
 					} else if (whoseTurn == "O") {
-						var tile = "O" + id;
+						tile = "O" + id;
 						tile = document.getElementById(tile);
 						$(tile).css("z-index", 0);
 						$(this).attr("id", null);
@@ -56,6 +57,10 @@ $(document).ready(function() {
 			} else {
 				alert("WE ALREADY HAVE A WINNER, FOOL");
 			}
+	});
+	$('#reset').on('click', function () {
+		console.log("clicked reset");
+		window.location.reload(false);
 	});
 });
 
