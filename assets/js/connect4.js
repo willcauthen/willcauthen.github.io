@@ -48,16 +48,17 @@ $(document).ready(function () {
 });
 
 
-function turn() {
+var game;
+var turn = function() {
 	if (whoseTurn == "BLUE") {
 		whoseTurn = "RED";
 	} else if (whoseTurn == "RED") {
 		whoseTurn = "BLUE";
 	}
 	console.log(whoseTurn + "'s turn");
-}
+};
 
-function checkWinner() {
+var checkWinner = function() {
 	for (var i = 0; i < hash.length; i++) {
 		if ( (hash[i] !== null) && (hash[i] !== undefined) ){
 			if ( hash[i] == hash[i + 1] && hash[i] == hash[i + 2] && hash[i] == hash[i +3]) {
@@ -72,11 +73,11 @@ function checkWinner() {
 			
 		}
 	}
-}
-function celebrate(x) {
+};
+var celebrate = function(x) {
 	// alert(hash[x] + " IS A WINNER WINNER CHICKEN DINNER");
 	console.log( hash[x] + " IS A WINNER WINNER CHICKEN DINNER");
 	$(".kudos").prepend(" " + whoseTurn + "'S A ");
 	$("div#victory").css( "zIndex", 5);
 
-}
+};
