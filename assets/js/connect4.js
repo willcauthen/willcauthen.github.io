@@ -62,13 +62,10 @@ var game = {
 	checkWinner: function() {
 		for (var i = 0; i < hash.length; i++) {
 			if ( (hash[i] !== null) && (hash[i] !== undefined) ){
-				if ( hash[i] == hash[i + 1] && hash[i] == hash[i + 2] && hash[i] == hash[i +3]) {
-					game.celebrate(i);
-				} else if (hash[i] == hash[i + 10] && hash[i] == hash[i + 20] && hash[i] == hash[i + 30]) {
-					game.celebrate(i);
-				} else if (hash[i] == hash[i + 11] && hash[i] == hash[i + 22] && hash[i] == hash[i + 33]) {
-					game.celebrate(i);
-				} else if (hash[i] == hash[i + 9] && hash[i] == hash[i + 18] && hash[i] == hash[i + 27]) {
+				if (( hash[i] == hash[i + 1] && hash[i] == hash[i + 2] && hash[i] == hash[i +3])    ||
+				    (hash[i] == hash[i + 10] && hash[i] == hash[i + 20] && hash[i] == hash[i + 30]) ||
+				    (hash[i] == hash[i + 11] && hash[i] == hash[i + 22] && hash[i] == hash[i + 33]) ||
+				    (hash[i] == hash[i + 9] && hash[i] == hash[i + 18] && hash[i] == hash[i + 27])) {
 					game.celebrate(i);
 				} 	
 			}
